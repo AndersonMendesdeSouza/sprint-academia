@@ -104,14 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.querySelectorAll('.facilities-carousel, .results-carousel').forEach(carousel => {
+    document.querySelectorAll('.facilities-carousel').forEach(carousel => {
         const carouselTrack = carousel.querySelector('.carousel-track');
         const carouselSlides = Array.from(carouselTrack.children);
         const carouselDots = carousel.querySelector('.carousel-dots');
         const carouselCounter = carousel.querySelector('.carousel-counter');
         const previousPageBtn = carousel.querySelector('.carousel-prev');
         const nextPageBtn = carousel.querySelector('.carousel-next');
-        const isResults = carousel.classList.contains('results-carousel');
         let slidesPerView = 1;
         let currentPage = 0;
         let pageButtons = [];
@@ -154,12 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 carouselDots.replaceChildren();
                 pageButtons = Array.from({ length: pageCount }, (_, index) => {
                     const button = document.createElement('button');
-                    const firstResult = index * slidesPerView + 1;
-                    const lastResult = Math.min(firstResult + slidesPerView - 1, carouselSlides.length);
-                    let label = `Ver foto ${index + 1}`;
-                    if (isResults) {
-                        label = slidesPerView === 1 ? `Ver resultado ${firstResult}` : `Ver resultados ${firstResult} a ${lastResult}`;
-                    }
+                    const label = `Ver foto ${index + 1}`;
                     button.type = 'button';
                     button.className = 'carousel-dot';
                     button.setAttribute('aria-label', label);
@@ -212,10 +206,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: 0.08 });
 
         const revealElements = document.querySelectorAll(`
-            .about-text, .about-image, .section-header, .training-text,
-            .training-photo, .facilities-carousel, .results-carousel,
-            .schedule-text, .schedule-card,
-            .product-card, .plan-card, .cta-content
+            .about-text, .about-image, .section-header, .facilities-carousel,
+            .schedule-text, .schedule-card, .result-card,
+            .plan-card, .cta-content
         `);
 
         revealElements.forEach(element => {
