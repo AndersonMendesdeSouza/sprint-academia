@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#090b08">
     <title>Sprint Academia | Seu ritmo. Sua força. Sua evolução.</title>
-    <meta name="description" content="Conheça a Sprint Academia em Buriti Alegre, GO. Musculação, um ambiente para evoluir e uma equipe para receber você. Agende sua visita pelo WhatsApp.">
+    <meta name="description" content="Sprint Academia: musculação em Buriti Alegre, GO. Confira horários, planos e resultados dos alunos. Rua Francisco Mota, Setor Morada dos Buritis.">
     <meta property="og:title" content="Sprint Academia | Seu ritmo. Sua força. Sua evolução.">
-    <meta property="og:description" content="Sua próxima conquista começa aqui. Conheça a Sprint Academia em Buriti Alegre, GO, e agende sua visita.">
+    <meta property="og:description" content="Conheça a estrutura, os horários e os planos da Sprint Academia em Buriti Alegre, GO. Agende sua visita pelo WhatsApp.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <link rel="icon" type="image/png" href="assets/logo/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="assets/nome/image.png">
+    <link rel="preload" as="image" href="assets/banner/banner.png" media="(max-width: 600px)">
+    <link rel="preload" as="image" href="assets/banner/banner2.png" media="(min-width: 601px)">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest" defer></script>
     <script src="script.js" defer></script>
@@ -47,45 +48,42 @@
 
     <main id="conteudo">
         <section id="inicio" class="hero" aria-labelledby="hero-title">
-            <img src="assets/nome/image.png" class="hero-bg" width="600" height="488" alt="Alunos e equipe juntos no espaço de musculação da Sprint Academia" fetchpriority="high">
+            <picture class="hero-picture">
+                <source media="(max-width: 600px)" srcset="assets/banner/banner.png" width="714" height="1212">
+                <img src="assets/banner/banner2.png" class="hero-bg" width="1080" height="978" alt="Duas mulheres com camisetas da Sprint Academia segurando um certificado na academia" fetchpriority="high">
+            </picture>
             <div class="hero-overlay" aria-hidden="true"></div>
             <div class="container hero-content">
                 <div class="hero-copy">
-                    <span class="eyebrow hero-eyebrow"><span aria-hidden="true"></span> Buriti Alegre · Goiás</span>
-                    <h1 id="hero-title">SEU RITMO.<br>SUA FORÇA.<br><span>SUA SPRINT.</span></h1>
-                    <p>Mais que um treino. Um compromisso com você.<br>Encontre seu espaço para se movimentar, superar limites e evoluir todos os dias.</p>
+                    <h1 id="hero-title">SEU TREINO.<br>SEU RITMO.<br><span>NA SPRINT.</span></h1>
+                    <p>Comece a treinar ou retome sua rotina. Conheça nosso espaço e encontre o melhor horário para você.</p>
                     <div class="hero-btns">
                         <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20%C3%A0%20Sprint%20Academia.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Quero conhecer <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                         <a href="#estrutura" class="btn btn-secondary">Explore a academia <i data-lucide="arrow-down" aria-hidden="true"></i></a>
                     </div>
-                    <div class="hero-location"><i data-lucide="map-pin" aria-hidden="true"></i> Morada Buritis, Buriti Alegre – GO</div>
+                    <div class="hero-location"><i data-lucide="map-pin" aria-hidden="true"></i><span>Rua Francisco Mota · Setor Morada dos Buritis</span></div>
                 </div>
                 <a class="hero-performance" href="https://www.instagram.com/sprint.academia/" target="_blank" rel="noopener noreferrer" aria-label="Conheça o dia a dia da Sprint no Instagram">
-                    <span class="performance-label">Aqui é Sprint</span>
-                    <p>O próximo passo<br>é com você.</p>
+                    <span class="performance-label">Sprint Academia</span>
+                    <p>Conheça nosso<br>dia a dia.</p>
                     <span class="performance-link">@sprint.academia <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
                 </a>
             </div>
-            <a class="hero-scroll" href="#academia"><span>Conheça seu próximo lugar de treino</span><i data-lucide="arrow-down" aria-hidden="true"></i></a>
+            <a class="hero-scroll" href="#academia"><span>Conheça a Sprint</span><i data-lucide="arrow-down" aria-hidden="true"></i></a>
         </section>
-
-        <div class="brand-strip" aria-label="Sprint Academia: musculação, constância e evolução">
-            <div class="container"><span>SPRINT ACADEMIA</span><i data-lucide="asterisk" aria-hidden="true"></i><span>MUSCULAÇÃO</span><i data-lucide="asterisk" aria-hidden="true"></i><span>CONSTÂNCIA</span><i data-lucide="asterisk" aria-hidden="true"></i><span>EVOLUÇÃO</span></div>
-        </div>
 
         <section id="academia" class="about" aria-labelledby="about-title">
             <div class="container about-grid">
                 <div class="about-text">
                     <span class="eyebrow">01 / A nossa academia</span>
-                    <h2 id="about-title">O SEU OBJETIVO.<br>A NOSSA <span>ENERGIA.</span></h2>
-                    <p>Tem quem esteja começando. Tem quem queira ir além. Na Sprint Academia, cada pessoa tem seu ritmo — e todo passo merece ser valorizado.</p>
-                    <p>Em Buriti Alegre, nosso espaço reúne musculação, movimento e pessoas com vontade de evoluir. Venha conhecer a equipe e encontrar o seu lugar nessa rotina.</p>
-                    <div class="about-signature"><span aria-hidden="true"></span> Sua evolução faz parte da nossa história.</div>
-                    <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Quero%20conhecer%20a%20equipe%20e%20a%20estrutura%20da%20Sprint%20Academia." class="text-link" target="_blank" rel="noopener noreferrer">Conheça a Sprint de perto <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    <h2 id="about-title">UM ESPAÇO<br>PARA <span>VOCÊ TREINAR.</span></h2>
+                    <p>Na Sprint, você encontra um espaço de musculação para incluir o treino no seu dia a dia.</p>
+                    <p>Está começando ou quer voltar a treinar? Venha conhecer o ambiente, conversar com a equipe e escolher o melhor horário para você.</p>
+                    <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Quero%20conhecer%20a%20equipe%20e%20a%20estrutura%20da%20Sprint%20Academia." class="text-link" target="_blank" rel="noopener noreferrer">Agende uma visita <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                 </div>
                 <figure class="about-image">
                     <img src="assets/time/time.png" width="438" height="470" alt="Equipe da Sprint Academia reunida, com os uniformes verde-lima da marca" loading="lazy">
-                    <figcaption><span>GENTE QUE MOVE A SPRINT.</span><span>Nossa equipe, perto de você.</span></figcaption>
+                    <figcaption><span>NOSSA EQUIPE.</span><span>Sprint Academia</span></figcaption>
                 </figure>
             </div>
         </section>
@@ -94,32 +92,41 @@
             <div class="container">
                 <div class="section-header section-header-split">
                     <div>
-                        <span class="eyebrow">02 / Seu espaço de evolução</span>
-                        <h2 id="facilities-title">DÁ VONTADE<br>DE <span>FAZER PARTE.</span></h2>
+                        <span class="eyebrow">02 / Estrutura</span>
+                        <h2 id="facilities-title">UM POUCO DA<br><span>NOSSA ESTRUTURA.</span></h2>
                     </div>
-                    <p id="facilities-note">Um pouco do espaço e das pessoas que fazem a Sprint acontecer. Para conhecer cada detalhe, venha nos visitar.</p>
+                    <p id="facilities-note">Conheça a Sprint de perto. Agende uma visita para ver os ambientes e conversar com a equipe.</p>
                 </div>
                 <div class="facilities-carousel" role="region" aria-roledescription="carrossel" aria-labelledby="facilities-title" aria-describedby="facilities-note">
-                    <div class="carousel-track" id="facilities-track" tabindex="0" aria-label="Fotografias da Sprint Academia">
-                        <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 de 2">
-                            <img src="assets/nome/image.png" width="600" height="488" alt="Ambiente da Sprint com halteres, equipamentos de musculação e iluminação natural" loading="lazy">
-                            <figcaption><span>Seu treino encontra um lugar aqui.</span><span>Sprint Academia · Buriti Alegre</span></figcaption>
+                    <div class="carousel-track" id="facilities-track" tabindex="0" aria-label="Fotografias ilustrativas de ambientes de academia" aria-describedby="facilities-photo-note">
+                        <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 de 4">
+                            <img src="assets/estrutura/cardio.jpg" width="1600" height="1068" alt="Foto ilustrativa de academia com piso de madeira, esteiras e janelas amplas" loading="lazy">
+                            <figcaption><span>Ambientes de treino</span><a href="https://www.pexels.com/photo/interior-of-modern-fitness-club-with-various-machines-and-equipment-7031705/" target="_blank" rel="noopener noreferrer">Max Vakhtbovych / Pexels</a></figcaption>
                         </figure>
-                        <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 2">
-                            <img src="assets/time/time.png" width="438" height="470" alt="A equipe da Sprint no espaço de musculação da academia" loading="lazy">
-                            <figcaption><span>Uma equipe para receber você.</span><span>Sprint Academia · Nossa equipe</span></figcaption>
+                        <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 4">
+                            <img src="assets/estrutura/musculacao.jpg" width="1600" height="1067" alt="Foto ilustrativa de espaço de musculação com equipamentos escuros e iluminação natural" loading="lazy">
+                            <figcaption><span>Espaço de musculação</span><a href="https://unsplash.com/photos/w7jYaN7GqyA" target="_blank" rel="noopener noreferrer">Rick Barrett / Unsplash</a></figcaption>
+                        </figure>
+                        <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 de 4">
+                            <img src="assets/estrutura/pesos.jpg" width="1600" height="1067" alt="Foto ilustrativa de halteres e aparelhos em academia com detalhes roxos" loading="lazy">
+                            <figcaption><span>Pesos e equipamentos</span><a href="https://unsplash.com/photos/assorted-gym-equipment-inside-the-gym-XKimW0pke6w" target="_blank" rel="noopener noreferrer">Mark Bertulfo / Unsplash</a></figcaption>
+                        </figure>
+                        <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 de 4">
+                            <img src="assets/estrutura/ambiente.jpg" width="1600" height="1067" alt="Foto ilustrativa de ambiente de academia com equipamentos de treino e espelhos" loading="lazy">
+                            <figcaption><span>Visão dos ambientes</span><a href="https://www.pexels.com/photo/interior-of-gym-17227606/" target="_blank" rel="noopener noreferrer">hi room / Pexels</a></figcaption>
                         </figure>
                     </div>
                     <div class="carousel-controls" hidden>
                         <div class="carousel-progress">
                             <div class="carousel-dots" role="group" aria-label="Escolher fotografia"></div>
-                            <span class="carousel-counter" aria-live="polite" aria-atomic="true">01 / 02</span>
+                            <span class="carousel-counter" aria-live="polite" aria-atomic="true">01 / 04</span>
                         </div>
                         <div class="carousel-arrows">
                             <button type="button" class="carousel-arrow carousel-prev" aria-label="Foto anterior" title="Foto anterior" aria-controls="facilities-track" disabled><i data-lucide="arrow-left" aria-hidden="true"></i></button>
                             <button type="button" class="carousel-arrow carousel-next" aria-label="Próxima foto" title="Próxima foto" aria-controls="facilities-track"><i data-lucide="arrow-right" aria-hidden="true"></i></button>
                         </div>
                     </div>
+                    <p class="facilities-photo-note" id="facilities-photo-note">Fotos ilustrativas de outras academias. Conheça a estrutura da Sprint em uma visita.</p>
                 </div>
             </div>
         </section>
@@ -128,8 +135,8 @@
             <div class="container schedule-grid">
                 <div class="schedule-text">
                     <span class="eyebrow">03 / Encontre seu horário</span>
-                    <h2 id="schedule-title">O TREINO FAZ<br>PARTE DA <span>ROTINA.</span></h2>
-                    <p>Encontre o melhor momento para treinar e manter a constância. Esperamos você de segunda a sábado para fazer parte da rotina Sprint.</p>
+                    <h2 id="schedule-title">HORÁRIOS PARA<br><span>O SEU TREINO.</span></h2>
+                    <p>Funcionamos de segunda a sábado, nos horários abaixo. Escolha o melhor período para treinar e fale com a equipe para combinar sua visita.</p>
                     <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20%C3%A0%20Sprint%20Academia." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Agende sua visita <i data-lucide="clock" aria-hidden="true"></i></a>
                 </div>
                 <div class="schedule-list">
@@ -146,7 +153,6 @@
                         <div>
                             <h3>Sábado</h3>
                             <div class="schedule-times"><span>10h às 12h</span></div>
-                            <p>Seu fim de semana também tem movimento.</p>
                         </div>
                     </div>
                     <p class="schedule-note">Em feriados, confirme o funcionamento com a equipe.</p>
@@ -157,22 +163,22 @@
         <section id="resultados" class="results" aria-labelledby="results-title">
             <div class="container">
                 <div class="section-header">
-                    <span class="eyebrow">04 / Cada conquista conta</span>
-                    <h2 id="results-title">A EVOLUÇÃO<br>ACONTECE <span>TODO DIA.</span></h2>
-                    <p>Um treino de cada vez. Uma conquista de cada vez. Conheça algumas evoluções de quem faz parte da Sprint.</p>
+                    <span class="eyebrow">04 / Resultados</span>
+                    <h2 id="results-title">RESULTADOS<br><span>QUE INSPIRAM.</span></h2>
+                    <p>Confira os registros de antes e depois de alunos da Sprint Academia.</p>
                 </div>
                 <div class="results-gallery">
                     <figure class="result-card">
                         <img src="assets/resultados/resultado.png" width="752" height="664" alt="Comparação de antes e depois de um aluno da Sprint, fotografado de perfil com os braços estendidos" loading="lazy">
-                        <figcaption>Evolução com constância.</figcaption>
+                        <figcaption>Antes e depois · Sprint Academia</figcaption>
                     </figure>
                     <figure class="result-card">
                         <img src="assets/resultados/resultado2.png" width="754" height="518" alt="Segundo registro de antes e depois de um aluno da Sprint, fotografado de perfil" loading="lazy">
-                        <figcaption>Cada treino conta.</figcaption>
+                        <figcaption>Antes e depois · Sprint Academia</figcaption>
                     </figure>
                     <figure class="result-card">
                         <img src="assets/resultados/resultado3.png" width="748" height="652" alt="Comparação de antes e depois de uma aluna da Sprint, fotografada de costas" loading="lazy">
-                        <figcaption>Uma conquista de cada vez.</figcaption>
+                        <figcaption>Antes e depois · Sprint Academia</figcaption>
                     </figure>
                 </div>
             </div>
@@ -181,9 +187,9 @@
         <section id="planos" class="plans" aria-labelledby="plans-title">
             <div class="container">
                 <div class="section-header">
-                    <span class="eyebrow">05 / Comece com a gente</span>
-                    <h2 id="plans-title">SEU PLANO.<br>SEU <span>PRÓXIMO PASSO.</span></h2>
-                    <p>Escolha o período que combina com sua rotina e dê o primeiro passo para começar a treinar.</p>
+                    <span class="eyebrow">05 / Planos</span>
+                    <h2 id="plans-title">PLANOS PARA<br><span>A SUA ROTINA.</span></h2>
+                    <p>Confira as opções mensal e trimestral. Para tirar dúvidas sobre a matrícula, fale com a equipe pelo WhatsApp.</p>
                 </div>
                 <div class="plans-grid">
                     <div class="plan-card">
@@ -191,7 +197,7 @@
                         <h3>Mensal</h3>
                         <div class="plan-price">R$ <span>120,00</span></div>
                         <p class="plan-period">Por mês</p>
-                        <p class="plan-description">Um mês para dar o primeiro passo e encontrar seu ritmo de treino.</p>
+                        <p class="plan-description">Para quem prefere renovar o plano mês a mês.</p>
                         <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20mensal%20da%20Sprint%20Academia.%20Pode%20confirmar%20os%20valores%20e%20as%20condi%C3%A7%C3%B5es%3F" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Quero o plano mensal <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                     </div>
                     <div class="plan-card featured">
@@ -199,7 +205,7 @@
                         <h3>Trimestral</h3>
                         <div class="plan-price">R$ <span>350,00</span></div>
                         <p class="plan-period">Valor total pelos 3 meses</p>
-                        <p class="plan-description">Três meses para construir constância e fazer do treino parte da sua rotina.</p>
+                        <p class="plan-description">Uma opção para manter o treino pelos próximos três meses.</p>
                         <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20trimestral%20da%20Sprint%20Academia.%20Pode%20confirmar%20os%20valores%20e%20as%20condi%C3%A7%C3%B5es%3F" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Quero o plano trimestral <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -209,10 +215,10 @@
 
         <section class="cta-final" aria-labelledby="cta-title">
             <div class="container cta-content">
-                <span class="eyebrow">Sprint Academia · Buriti Alegre</span>
-                <h2 id="cta-title">A SUA MELHOR VERSÃO<br>COMEÇA COM <span>MOVIMENTO.</span></h2>
-                <p>O primeiro passo pode ser uma conversa.<br>Agende sua visita e venha sentir a energia da Sprint.</p>
-                <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20e%20come%C3%A7ar%20a%20treinar%20na%20Sprint%20Academia." class="btn btn-dark" target="_blank" rel="noopener noreferrer">Bora para a Sprint <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                <span class="eyebrow">Sprint Academia</span>
+                <h2 id="cta-title">VENHA TREINAR<br>NA <span>SPRINT.</span></h2>
+                <p>Fale com a equipe pelo WhatsApp para tirar dúvidas e agendar sua visita.</p>
+                <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20e%20come%C3%A7ar%20a%20treinar%20na%20Sprint%20Academia." class="btn btn-dark" target="_blank" rel="noopener noreferrer">Agendar visita <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
             </div>
         </section>
     </main>
@@ -221,7 +227,7 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a class="logo" href="#inicio" aria-label="Sprint Academia, voltar ao início"><img src="assets/logo/logo.png" class="logo-img" width="1080" height="1080" alt="Sprint Academia" loading="lazy"></a>
-                <p>Seu ritmo. Sua força. Sua evolução.<br>O seu lugar de treinar em Buriti Alegre.</p>
+                <p>Conheça a academia e venha treinar com a gente.</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/sprint.academia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Sprint Academia"><i data-lucide="instagram" aria-hidden="true"></i></a>
                     <a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Sprint%20Academia." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Sprint Academia"><i data-lucide="message-circle" aria-hidden="true"></i></a>
@@ -239,11 +245,11 @@
             </div>
             <div class="footer-info">
                 <h3>Encontre a gente</h3>
-                <p><i data-lucide="map-pin" aria-hidden="true"></i><a href="https://www.google.com/maps/search/?api=1&amp;query=Sprint%20Academia%20Rua%20Francisco%20Mota%20Q19%20L14%20Morada%20Buritis%20Buriti%20Alegre%20GO" target="_blank" rel="noopener noreferrer">Rua Francisco Mota, Q19 – L14<br>Morada Buritis · Buriti Alegre – GO</a></p>
+                <p><i data-lucide="map-pin" aria-hidden="true"></i><a href="https://www.google.com/maps/search/?api=1&amp;query=Sprint%20Academia%20Rua%20Francisco%20Mota%20Q19%20L14%20Setor%20Morada%20dos%20Buritis%20Buriti%20Alegre%20GO" target="_blank" rel="noopener noreferrer">Rua Francisco Mota, Q19 – L14<br>Setor Morada dos Buritis · Buriti Alegre – GO</a></p>
                 <p><i data-lucide="phone" aria-hidden="true"></i><a href="https://wa.me/5564992860996?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Sprint%20Academia." target="_blank" rel="noopener noreferrer" aria-label="Fale com a Sprint pelo WhatsApp no número (64) 99286-0996">(64) 99286-0996</a></p>
                 <p><i data-lucide="clock" aria-hidden="true"></i><span>Seg. a sex.: 06h às 12h e 14h às 21h<br>Sábado: 10h às 12h</span></p>
                 <p><i data-lucide="instagram" aria-hidden="true"></i><a href="https://www.instagram.com/sprint.academia/" target="_blank" rel="noopener noreferrer">@sprint.academia</a></p>
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Sprint%20Academia%20Rua%20Francisco%20Mota%20Q19%20L14%20Morada%20Buritis%20Buriti%20Alegre%20GO" target="_blank" rel="noopener noreferrer">Como chegar <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Sprint%20Academia%20Rua%20Francisco%20Mota%20Q19%20L14%20Setor%20Morada%20dos%20Buritis%20Buriti%20Alegre%20GO" target="_blank" rel="noopener noreferrer">Como chegar <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="container footer-bottom"><p>&copy; 2026 Sprint Academia. Todos os direitos reservados.</p><a href="#inicio">De volta ao topo <i data-lucide="arrow-up" aria-hidden="true"></i></a></div>
